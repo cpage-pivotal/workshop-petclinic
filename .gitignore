@@ -3,6 +3,7 @@ bin/*
 build/*
 .gradle/*
 .settings/*
+.advisor
 .classpath
 .project
 .factorypath
