@@ -16,14 +16,25 @@
 
 package org.springframework.samples.petclinic.system;
 
+import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.jdbc.core.JdbcTemplate;
 import org.springframework.stereotype.Controller;
+import org.springframework.ui.Model;
 import org.springframework.web.bind.annotation.GetMapping;
+
+import java.sql.Connection;
+import java.sql.SQLException;
+import java.util.Objects;
 
 @Controller
 class WelcomeController {
+	@Autowired
+	JdbcTemplate _jdbcTemplate;
 
 	@GetMapping("/")
-	public String welcome() {
+	public String welcome(Model model) throws SQLException {
+		Connection connection = Objects.requireNonNull(_jdbcTemplate.getDataSource()).getConnection();
+		model.addAttribute("clinicDB", "Clinic Database: " + connection.getMetaData().getURL());
 		return "welcome";
 	}
 
