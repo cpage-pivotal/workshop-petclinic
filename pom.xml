@@ -180,13 +180,13 @@
   <repositories>
     <repository>
       <id>spring-enterprise</id>
-      <url>https://packages.broadcom.com/artifactory/spring-enterprise</url>
+      <url>https://github.com/cpage-pivotal/workshop-petclinic</url>
     </repository>
   </repositories>
   <pluginRepositories>
     <pluginRepository>
       <id>spring-enterprise</id>
-      <url>https://packages.broadcom.com/artifactory/spring-enterprise</url>
+      <url>https://github.com/cpage-pivotal/workshop-petclinic</url>
     </pluginRepository>
   </pluginRepositories>
 
