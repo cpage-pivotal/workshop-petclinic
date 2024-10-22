@@ -180,13 +180,13 @@
   <repositories>
     <repository>
       <id>spring-enterprise</id>
-      <url>https://github.com/cpage-pivotal/workshop-petclinic</url>
+      <url>http://maven.tanzu.corby.page:8081/repository</url>
     </repository>
   </repositories>
   <pluginRepositories>
     <pluginRepository>
       <id>spring-enterprise</id>
-      <url>https://github.com/cpage-pivotal/workshop-petclinic</url>
+      <url>http://maven.tanzu.corby.page:8081/repository</url>
     </pluginRepository>
   </pluginRepositories>
 
